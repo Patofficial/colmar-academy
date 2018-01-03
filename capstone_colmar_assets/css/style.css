@@ -1,0 +1,173 @@
+/*general*/
+html {
+  font-size: 16px;
+}
+
+.container {
+
+}
+
+/*header*/
+header {
+  width: 100%;
+}
+
+header .container {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 1.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+}
+
+
+
+nav {
+
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 0.5rem;
+}
+
+/* banner */
+
+.banner {
+  width: 100%;
+  display: flex;
+}
+
+.left-container {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.right-container {
+  width: 40%;
+  padding: 2rem 0;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.banner .right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* info */
+.info {
+  width: 100%;
+  display: flex;
+}
+
+.info img{
+  max-width: 100%;
+}
+
+.info-box {
+  max-width: 100%;
+  display: flex;
+}
+
+.right-container #right-image {
+  width: 35%;
+  height: auto;
+  margin: 1rem;
+}
+
+.right-container img {
+  max-width: 100%;
+}
+
+.right-container .info-text {
+  width: 65%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+/* courses */
+.courses {
+  width: 100%;
+}
+
+.courses .container {
+  width:auto%;
+  margin: 2rem 4.5rem;
+}
+
+.heading-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.coursebox-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.coursebox {
+  margin: 2rem 0.5rem;
+  width: 30%;
+}
+
+.coursebox #left {
+  margin: 2rem 1rem 2rem 0;
+}
+
+.coursebox #right {
+  margin: 2rem 0 2rem 1rem;
+}
+
+.coursebox img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* thesis */
+.thesis {
+  width: 100%;
+}
+
+.thesis .container{
+  width: auto;
+}
+
+.thesis .content-container {
+  display: flex;
+}
+
+.content-container #left-info-box {
+  max-width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+/* footer */
+footer {
+  width: 100%;
+
+}
+
+footer .container {
+  margin: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
