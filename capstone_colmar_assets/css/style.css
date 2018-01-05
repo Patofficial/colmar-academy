@@ -1,51 +1,14 @@
 /*general*/
 html {
   font-size: 16px;
+  font-family: Roboto sans-serif;
+  background-color: white;
+  color: #696969;
 }
 
-.container {
-
-}
-
-/*header*/
-header {
-  width: 100%;
-}
-
-header .container {
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 1.5rem;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  height: 2rem;
-}
-
-
-
-nav {
-
-}
-
-nav ul {
-  display: flex;
-  align-items: center;
-}
-
-nav li {
-  margin: 0 0.5rem;
-}
-
-/* banner */
-
-.banner {
-  width: 100%;
-  display: flex;
+.main-content {
+  position: relative;
+  top: 4rem;
 }
 
 .left-container {
@@ -56,6 +19,127 @@ nav li {
 .right-container {
   width: 40%;
   padding: 2rem 0;
+
+}
+
+h1 {
+  font-family: Roboto;
+  font-size: 4rem;
+  color: #696969;
+  font-weight:bold;
+
+}
+
+h2 {
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #696969;
+}
+
+h6 {
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #696969;
+}
+
+p {
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 480px) {
+  .right-container,
+  .left-container {
+    width: 90%;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0;
+    align-items: center;
+  }
+
+}
+
+/*header*/
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  background-color: white;
+}
+
+header .container {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 1.5rem;
+
+}
+
+header #mobile {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  font-size: 2rem;
+}
+
+.logo h4 {
+  color: #696969;
+  font-weight: bold;
+  font-family: roboto;
+}
+
+.logo #academy {
+  color: #dcdcdc;
+  font-weight: bold;
+  font-family: Montserrat;
+}
+
+
+nav {
+font-size: 1rem;
+font-family: Montserrat;
+font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+}
+
+nav li {
+  margin: 0 0.5rem;
+
+}
+
+@media only screen and (max-width: 810px) {
+header #desktop {
+  display: none;
+}
+
+header #mobile {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  height: 4rem;
+}
+}
+
+/* banner */
+
+.banner {
+  width: 100%;
+  display: flex;
+  background-color: #dcdcdc;
+  align-items: center;
 }
 
 .banner img {
@@ -67,21 +151,113 @@ nav li {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: Roboto;
+  font-weight: bold;
 }
 
+.right-container h1 {
+  margin-bottom: 1.5rem;
+}
+
+.right-container h3 {
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #696969;
+}
+
+.right-container h4 {
+  font-family: Montserrat;
+  font-size: 2rem;
+  width: 80%;
+  background-color: #696969;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+@media only screen and (max-width: 810px) {
+  .banner {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .banner .left-container {
+    width: 100%;
+  }
+
+  .banner .right-container {
+    padding: 2rem 1rem;
+    max-width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .right-container h1 {
+    margin-bottom: 2rem;
+    width:100%;
+  }
+
+  .right-container h3 {
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #696969;
+    width: 90%;
+  }
+
+  .right-container h4 {
+    font-family: Montserrat;
+    font-size: 2rem;
+    width: 90%;
+  }
+}
 /* info */
 .info {
   width: 100%;
   display: flex;
 }
 
-.info img{
+.info .left-container {
+  border-right: 1px solid #dcdcdc;
+}
+
+.info img {
   max-width: 100%;
+}
+
+.info h1 {
+  margin-bottom: 1.5rem;
+}
+
+.info h6 {
+  margin-bottom: 2rem;
+}
+
+.info p {
+  font-size: 1.5rem;
 }
 
 .info-box {
   max-width: 100%;
   display: flex;
+}
+
+.info #firstbox {
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.info #secondbox {
+  border-top: 1px solid #dcdcdc;
+}
+
+.info #thirdbox {
+  background-color: #dcdcdc;
 }
 
 .right-container #right-image {
@@ -90,8 +266,15 @@ nav li {
   margin: 1rem;
 }
 
+.right-container #top {
+  margin: 0 1rem 1rem 1rem;
+  width: 35%;
+  height: auto;
+}
+
 .right-container img {
   max-width: 100%;
+  height: auto;
 }
 
 .right-container .info-text {
@@ -101,13 +284,66 @@ nav li {
   justify-content: center;
 }
 
+.info-text h2 {
+  margin-bottom: 1.5rem;
+}
+
+.info-text h6, .info-text a {
+  font-family: Montserrat;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 810px) {
+  .info {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    padding: 1rem 1rem 2rem 1rem;
+    align-items: center;
+  }
+
+  .info .left-container {
+    display: none;
+  }
+
+  .info-box {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    border: none;
+  }
+
+  .right-container #right-image,
+  .right-container #top {
+    width: 90%;
+    height: auto;
+  }
+
+  .right-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .info #thirdbox {
+    background-color: white;
+  }
+
+  .info-text {
+    margin: 0 2rem;
+  }
+
+
+}
+
 /* courses */
 .courses {
   width: 100%;
+  background-color: #dcdcdc;
 }
 
 .courses .container {
-  width:auto%;
+  width: auto;
   margin: 2rem 4.5rem;
 }
 
@@ -115,17 +351,30 @@ nav li {
   width: 100%;
   display: flex;
   justify-content: center;
+
+}
+
+.heading-container {
+  font-size: 4rem;
+  font-family: Roboto;
+  font-weight: bold;
+}
+
+.heading-container h1 {
+  padding: 2rem 0;
 }
 
 .coursebox-container {
-  margin-top: 2rem;
   display: flex;
   flex-flow: wrap;
+  justify-content: center;
 }
 
 .coursebox {
   margin: 2rem 0.5rem;
   width: 30%;
+  background-color: whitesmoke;
+
 }
 
 .coursebox #left {
@@ -141,13 +390,75 @@ nav li {
   max-width: 100%;
 }
 
+.coursebox h2 {
+  margin: 1rem 1rem;
+}
+
+.coursebox h6 {
+  margin: 0.5rem 1rem;
+}
+
+@media only screen and (max-width: 810px ) {
+  .courses {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+  }
+
+  .courses .container {
+    width: 90%;
+    margin: 1rem 1rem 2rem 1rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .coursebox-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+  }
+
+  .coursebox img,
+  .coursebox h6 {
+    display: none;
+  }
+
+  .coursebox {
+    width: 100%;
+    background-color: white;
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .coursebox h2 {
+    background-color: #dcdcdc;
+    width: 100%;
+    padding: 1rem 1rem 1.5rem 1rem;
+  }
+}
+
 /* thesis */
 .thesis {
   width: 100%;
 }
 
 .thesis .container{
-  width: auto;
+  width: 100%;
+}
+
+.thesis #firstbox {
+  background-color: #dcdcdc;
+}
+.thesis h2 {
+  margin-bottom: 1.5rem;
+}
+
+.thesis h6 {
+  margin: 0.5rem 0;
 }
 
 .thesis .content-container {
@@ -160,9 +471,27 @@ nav li {
   flex-flow: column;
 }
 
+@media only screen and (max-width: 810px) {
+  .thesis .container {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .thesis .left-container {
+    width: 100%;
+  }
+
+
+  .thesis #left-info-box,
+  .thesis .right-container {
+    display: none;
+  }
+}
+
 /* footer */
 footer {
   width: 100%;
+  border-top: 1px solid #dcdcdc;
 
 }
 
@@ -170,4 +499,18 @@ footer .container {
   margin: 1rem 1.5rem;
   display: flex;
   justify-content: space-between;
+  font-family: Montserrat;
+}
+
+@media only screen and (max-width: 810px) {
+  footer a {
+    display: none;
+  }
+
+  footer .container {
+    margin: 1rem 1rem;
+    display: flex;
+    font-family: Montserrat;
+  }
+
 }
